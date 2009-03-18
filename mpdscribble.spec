@@ -2,7 +2,7 @@ Summary:	mpdscribble is a music player daemon client which submits information a
 Name:		mpdscribble
 Version:	0.17
 Release:	%mkrel 1
-License:	LGPLv2+
+License:	GPLv2+
 Group:		Sound
 Url:		http://mpd.wikia.com/wiki/Client:Mpdscribble
 Source0:	http://downloads.sourceforge.net/musicpd/mpdscribble-0.17.tar.bz2
