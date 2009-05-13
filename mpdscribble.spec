@@ -1,14 +1,13 @@
-Summary:	mpdscribble is a music player daemon client which submits information about tracks being played to Last.fm (formerly audioscrobbler)
+Summary:	Mpd client which submits information about tracks being played to Lastfm
 Name:		mpdscribble
 Version:	0.17
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	GPLv2+
 Group:		Sound
 Url:		http://mpd.wikia.com/wiki/Client:Mpdscribble
 Source0:	http://downloads.sourceforge.net/musicpd/mpdscribble-0.17.tar.bz2
 Patch0:		mpdscribble-0.17-format-not-a-string-literal.patch
 Requires:	mpd
-Requires:	libsoup-2.4_1
 BuildRequires:	libsoup-2.4-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
