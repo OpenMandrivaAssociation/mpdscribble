@@ -1,12 +1,11 @@
 Summary:	Mpd client which submits information about tracks being played to Lastfm
 Name:		mpdscribble
-Version:	0.17
-Release:	%mkrel 2
+Version:	0.18.1
+Release:	%mkrel 1
 License:	GPLv2+
 Group:		Sound
 Url:		http://mpd.wikia.com/wiki/Client:Mpdscribble
-Source0:	http://downloads.sourceforge.net/musicpd/mpdscribble-0.17.tar.bz2
-Patch0:		mpdscribble-0.17-format-not-a-string-literal.patch
+Source0:	http://downloads.sourceforge.net/musicpd/%{name}-%{version}.tar.bz2
 Requires:	mpd
 BuildRequires:	libsoup-2.4-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
@@ -22,7 +21,6 @@ features:
 
 %prep
 %setup -q
-%patch0 -p1
 
 %build
 %configure
