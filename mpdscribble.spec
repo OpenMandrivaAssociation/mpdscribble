@@ -8,6 +8,7 @@ Url:		http://mpd.wikia.com/wiki/Client:Mpdscribble
 Source0:	http://downloads.sourceforge.net/musicpd/%{name}-%{version}.tar.bz2
 Requires:	mpd
 BuildRequires:	libmpdclient-devel
+BuildRequires:	glib2-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
