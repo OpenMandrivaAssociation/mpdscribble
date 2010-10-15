@@ -7,7 +7,7 @@ Group:		Sound
 Url:		http://mpd.wikia.com/wiki/Client:Mpdscribble
 Source0:	http://downloads.sourceforge.net/musicpd/%{name}-%{version}.tar.bz2
 Requires:	mpd
-BuildRequires:	libsoup-2.4-devel
+BuildRequires:	libmpdclient-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
