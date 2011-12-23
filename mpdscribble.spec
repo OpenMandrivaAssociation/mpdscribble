@@ -1,7 +1,7 @@
 Summary:	Mpd client which submits information about tracks being played to Lastfm
 Name:		mpdscribble
 Version:	0.22
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	GPLv2+
 Group:		Sound
 Url:		http://mpd.wikia.com/wiki/Client:Mpdscribble
