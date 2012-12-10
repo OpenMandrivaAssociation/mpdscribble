@@ -46,3 +46,33 @@ touch %{buildroot}/var/cache/mpdscribble/cache
 %attr(0600,mpd,audio) %dir /var/cache/mpdscribble
 %attr(0600,mpd,audio) /var/cache/mpdscribble/cache
 
+
+
+%changelog
+* Fri Dec 23 2011 Andrey Bondrov <abondrov@mandriva.org> 0.22-3mdv2011.0
++ Revision: 744855
+- Fix BuildRequires (as libsoup Provides changed)
+- Bump release
+- New version 0.22, update BuildRequires
+
+* Fri Oct 15 2010 Rémy Clouard <shikamaru@mandriva.org> 0.20-1mdv2011.0
++ Revision: 585866
+- bump release
+
+* Sun Aug 30 2009 Frederik Himpe <fhimpe@mandriva.org> 0.18.1-1mdv2010.0
++ Revision: 422455
+- Update to new version 0.18.1
+- Remove format string patch: not needed anymore
+
+* Wed May 13 2009 Rémy Clouard <shikamaru@mandriva.org> 0.17-2mdv2010.0
++ Revision: 375216
+- fix wrong dependency that prevents installing the package on x86_64
+- fix a warning in rpmlint (summary too long)
+
+* Wed Mar 18 2009 Eugeni Dodonov <eugeni@mandriva.com> 0.17-1mdv2009.1
++ Revision: 357401
+- Fixed summary.
+- Fixed license.
+- import mpdscribble
+
+
