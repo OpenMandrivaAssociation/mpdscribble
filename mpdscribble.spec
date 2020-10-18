@@ -44,8 +44,8 @@ features:
 %{_bindir}/mpdscribble
 %{_mandir}/*/*
 %{_sysconfdir}/mpdscribble.conf
-#attr(0600,mpd,audio) #dir /var/cache/mpdscribble
-#attr(0600,mpd,audio) /var/cache/mpdscribble/cache
+%{_prefix}/lib/systemd/system/mpdscribble.service
+%{_prefix}/lib/systemd/user/mpdscribble.service
 
 
 
