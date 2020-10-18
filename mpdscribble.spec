@@ -8,6 +8,7 @@ Url:		http://mpd.wikia.com/wiki/Client:Mpdscribble
 Source0:	http://www.musicpd.org/download/mpdscribble/%{version}/%{name}-%{version}.tar.xz
 BuildRequires: meson
 BuildRequires: mpd
+BuildRequires: boost-devel
 BuildRequires: pkgconfig(libmpdclient)
 BuildRequires: pkgconfig(libsoup-2.4)
 BuildRequires: pkgconfig(systemd)
