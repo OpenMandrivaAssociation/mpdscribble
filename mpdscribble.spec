@@ -9,6 +9,7 @@ Source0:	http://www.musicpd.org/download/mpdscribble/%{version}/%{name}-%{versio
 BuildRequires: meson
 BuildRequires: mpd
 BuildRequires: boost-devel
+BuildRequires: pkgconfig(libgcrypt)
 BuildRequires: pkgconfig(libmpdclient)
 BuildRequires: pkgconfig(libsoup-2.4)
 BuildRequires: pkgconfig(systemd)
