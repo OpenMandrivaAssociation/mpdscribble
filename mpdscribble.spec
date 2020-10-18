@@ -1,15 +1,19 @@
 Summary:	Mpd client which submits information about tracks being played to Lastfm
 Name:		mpdscribble
-Version:	0.22
-Release:	4
+Version:	0.23
+Release:	1
 License:	GPLv2+
 Group:		Sound
 Url:		http://mpd.wikia.com/wiki/Client:Mpdscribble
-Source0:	http://downloads.sourceforge.net/musicpd/%{name}-%{version}.tar.bz2
-Requires:	mpd
-BuildRequires:	libmpdclient-devel >= 2.2
-BuildRequires:	pkgconfig(libsoup-2.4)
+Source0:	http://www.musicpd.org/download/mpdscribble/%{version}/%{name}-%{version}.tar.xz
+BuildRequires: meson
+BuildRequires: mpd
+BuildRequires: pkgconfig(libmpdclient)
+BuildRequires: pkgconfig(libsoup-2.4)
+BuildRequires: pkgconfig(systemd)
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
+
+Requires:	mpd
 
 %description
 Mpdscribble is a music player daemon client which submits information about
@@ -24,18 +28,12 @@ features:
 %setup -q
 
 %build
-%configure
-%make
+%meson
+%meson_build
 
 %install
-rm -rf %{buildroot}
-%makeinstall_std
+%meson_install
 
-mkdir -p %{buildroot}/var/cache/mpdscribble/
-touch %{buildroot}/var/cache/mpdscribble/cache
-
-%clean
-[ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
