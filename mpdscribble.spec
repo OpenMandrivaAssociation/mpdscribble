@@ -6,6 +6,8 @@ License:	GPLv2+
 Group:		Sound
 Url:		http://mpd.wikia.com/wiki/Client:Mpdscribble
 Source0:	http://www.musicpd.org/download/mpdscribble/%{version}/%{name}-%{version}.tar.xz
+Patch0:   https://patch-diff.githubusercontent.com/raw/MusicPlayerDaemon/mpdscribble/pull/42.patch
+
 BuildRequires: meson
 BuildRequires: mpd
 BuildRequires: boost-devel
@@ -28,7 +30,7 @@ features:
 * repeated songs 
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
 %meson
