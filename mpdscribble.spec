@@ -4,9 +4,8 @@ Version:	0.25
 Release:	1
 License:	GPLv2+
 Group:		Sound
-Url:		http://mpd.wikia.com/wiki/Client:Mpdscribble
+Url:		https://mpd.wikia.com/wiki/Client:Mpdscribble
 Source0:	https://www.musicpd.org/download/mpdscribble/%{version}/%{name}-%{version}.tar.xz
-Patch0:   https://patch-diff.githubusercontent.com/raw/MusicPlayerDaemon/mpdscribble/pull/42.patch
 
 BuildRequires: meson
 BuildRequires: mpd
